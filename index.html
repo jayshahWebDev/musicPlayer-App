@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="mainDiv">
+      <div class="musicListSection">
+        <!-- <div class="musicDetail">
+          <h3 class="musicDetailSongName">Cheap Thrills</h3>
+          <p class="musicDetailArtistName">sia</p>
+        </div>
+        <div class="horizontaline"></div> -->
+      </div>
+      <div class="verticalLine"></div>
+      <div class="musicControlSection">
+        <div class="songImage"></div>
+        <div class="songDetail">
+          <h3 class="songName"></h3>
+          <p class="artistName"></p>
+        </div>
+
+        <div class="songTimeSection">
+          <p class="songCurrentDuration">00:00</p>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            class="songDurationSlider"
+          />
+          <p class="songTotalDuration">00:00</p>
+        </div>
+
+        <div class="songActionSection">
+          <div class="actionBtn repeat" onclick="loopSong()">
+            <i class="fa-solid fa-repeat"></i>
+          </div>
+          <div class="mainControlButton">
+            <div class="actionBtn prev">
+              <i
+                class="fa-solid fa-backward-step"
+                onclick="playPreviousSong()"
+              ></i>
+            </div>
+            <div class="actionBtn play" onclick="playPauseSong()">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="actionBtn pause" onclick="playPauseSong()">
+              <i class="fa-solid fa-pause"></i>
+            </div>
+            <div class="actionBtn next" onclick="playNextSong()">
+              <i class="fa-solid fa-forward-step"></i>
+            </div>
+          </div>
+
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="volumeSelecetRange"
+          />
+
+          <div class="actionBtn volumeControl" onclick="volumeControl()">
+            <i class="fa-solid fa-volume-high"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
